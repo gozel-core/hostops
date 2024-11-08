@@ -10,7 +10,7 @@ on:
 env:
     NODE_ENV: production
     HUSKY: 0
-    PERSONAL_PAT: ${{ secrets.PERSONAL_PAT }}
+    GITHUB_TOKEN: ${{ secrets.PERSONAL_PAT }}
 
 permissions:
     contents: write # to be able to publish a GitHub release
