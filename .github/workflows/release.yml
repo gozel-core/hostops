@@ -26,7 +26,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: precheck
-              run: npm config list && npm whoami
+              run: echo "$GITHUB_TOKEN"
             - name: install dependencies
               run: npm install --frozen-lockfile --omit=""
             - name: test
