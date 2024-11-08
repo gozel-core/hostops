@@ -24,8 +24,10 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v4
+            - name: precheck
+              run: npm config list && npm whoami
             - name: install dependencies
-              run: npm install --frozen-lockfile --prod=false
+              run: npm install --frozen-lockfile --omit=""
             - name: test
               run: npm run test
             - name: build
