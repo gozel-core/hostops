@@ -64,7 +64,7 @@
     }
   },
   "dependencies": {
-    "@gozel-core/standard-js-backend": "^1.0.0",
+    "@gozel-core/standard-js-backend": "^1.0.1",
     "commander": "^12.1.0",
     "prompts": "^2.4.2",
     "tldts": "^6.1.46"

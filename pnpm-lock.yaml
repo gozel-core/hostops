@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@gozel-core/standard-js-backend':
-        specifier: ^1.0.0
-        version: 1.0.0(postmark@4.0.5)
+        specifier: ^1.0.1
+        version: 1.0.1(postmark@4.0.5)
       commander:
         specifier: ^12.1.0
         version: 12.1.0
@@ -420,8 +420,8 @@ packages:
     resolution: {integrity: sha512-CXtq5nR4Su+2I47WPOlWud98Y5Lv8Kyxp2ukhgFx/eW6Blm18VXJO5WuQylPugRo8nbluoi6GvvxBLqHcvqUUw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@gozel-core/standard-js-backend@1.0.0':
-    resolution: {integrity: sha512-/AO2Dgnz3/doHvr9bIpOQ4yTCs5TQzE0yruOHE7a7Hz2mYz8ASs9+27uLSPOibIIafQ5aUFxx53A3ugTQoW0fg==, tarball: https://npm.pkg.github.com/download/@gozel-core/standard-js-backend/1.0.0/d1b79b8a02d8523ea04592d4ea30b9a4e5702019}
+  '@gozel-core/standard-js-backend@1.0.1':
+    resolution: {integrity: sha512-bNP/K8+xOq8XEff/k0uhpOpACvTp1FzTSbrpUrLaeItjYxva1X36JWK6rJrAcyE6Ri0b/AtIDAFqJo/g3PZ5jw==, tarball: https://npm.pkg.github.com/download/@gozel-core/standard-js-backend/1.0.1/4c6c765980ee7c8900e74591510416e1a3657138}
     engines: {node: '>=20.x', pnpm: '>=8.x'}
     peerDependencies:
       postmark: ^4.0.5
@@ -3051,7 +3051,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@gozel-core/standard-js-backend@1.0.0(postmark@4.0.5)':
+  '@gozel-core/standard-js-backend@1.0.1(postmark@4.0.5)':
     dependencies:
       postmark: 4.0.5
 

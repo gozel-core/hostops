@@ -1,5 +1,5 @@
 import { parseHostname } from "../lib/parseHostname";
-import { fsUtil } from "@gozel/backend";
+import { fsUtil } from "@gozel-core/standard-js-backend";
 import path from "node:path";
 import { spawnProc } from "../issueCerts/spawnProc";
 import { getHostConf } from "../lib/hostConf";
