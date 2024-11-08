@@ -10,7 +10,7 @@ on:
 env:
     NODE_ENV: production
     HUSKY: 0
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    PERSONAL_PAT: ${{ secrets.PERSONAL_PAT }}
 
 permissions:
     contents: write # to be able to publish a GitHub release
@@ -18,17 +18,14 @@ permissions:
     pull-requests: write # to be able to comment on released pull requests
     id-token: write # to enable use of OIDC for npm provenance
     packages: write
-    repository-projects: read
 
 jobs:
     release:
         runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v4
-            - name: precheck
-              run: echo "$GITHUB_TOKEN"
             - name: install dependencies
-              run: npm install --frozen-lockfile --omit=""
+              run: npm install --frozen-lockfile --include=dev
             - name: test
               run: npm run test
             - name: build
