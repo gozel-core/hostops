@@ -13,7 +13,9 @@ export async function setupStaticHost(options: CmdSetupStaticHost) {
 
     console.log("Verifying host path...");
     const hostsRoot = options.hostsRoot;
-    const hostPath = path.join(hostsRoot, parsedHost.primary);
+    const hostPath = options.env
+        ? path.join(hostsRoot, parsedHost.primary, options.env)
+        : path.join(hostsRoot, parsedHost.primary);
 
     await fsUtil.verifyDir(hostPath, true);
 

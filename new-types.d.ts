@@ -23,6 +23,7 @@ declare global {
         chmod: string
         hostsRoot: string
         sslCertsRoot: string
+        env: string
     }
 
     interface CmdSetupProxyHost {

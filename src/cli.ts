@@ -17,6 +17,11 @@ program
         "-h, --host <string>",
         "Hostname. (www will be added if necessary)",
     )
+    .option(
+        "-e, --env <string>",
+        "Deploy environment. This will be a subpath for nginx location root.",
+        "latest",
+    )
     .option("--user <string>", "Owner of the host directory.", "nginx")
     .option("--group <string>", "Group owner of the host directory.", "nginx")
     .option("--chmod <string>", "Specify chmod command for the host directory.")
